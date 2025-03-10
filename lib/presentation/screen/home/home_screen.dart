@@ -40,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 width: double.infinity,
                 child: const Center(
                     child: Text(
-                  "🌍 World  News in Focus",
+                  "🌍 World  News  are in Focus",
                   style: TextStyle(fontSize: 26, fontWeight: FontWeight.w500),
                 ))),
           ),

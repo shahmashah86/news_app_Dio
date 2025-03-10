@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app_dio/presentation/bloc/news_article/news_article_bloc.dart';
 import 'package:news_app_dio/presentation/screen/home/widget/carouselnews.dart';
@@ -7,14 +7,9 @@ import 'package:news_app_dio/presentation/screen/home/widget/carouselnews.dart';
 import 'package:news_app_dio/presentation/screen/view_all/viewall_screen.dart';
 import 'package:news_app_dio/presentation/screen/widgets/scroll_news.dart';
 
-// List<String> imgList = [
-//   "assets/images/image4.jpg",
-//   "assets/images/image3.jpg",
-//   "assets/images/image2.jpg"
-// ];
 
 class HomeScreen extends StatefulWidget {
-  HomeScreen({super.key});
+  const HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -28,10 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
     context.read<NewsArticleBloc>().add(NewsArticleGetTopHeadlines());
     super.initState();
   }
-
-  // final ValueNotifier<int> current=ValueNotifier(0);
-
- 
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
             height: 10,
           ),
           Carouselnews(),
-         SizedBox(height: 10,),
+         const SizedBox(height: 10,),
            
           Padding(
             padding: const EdgeInsets.only(left: 6, right: 6),
@@ -75,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const ViewallScreen(),
+                        builder: (context) =>  ViewallScreen(),
                       )),
                   child: const Text(
                     "View all",
@@ -88,7 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
-          Expanded(child: const ScrollNews())
+          const Expanded(child: ScrollNews())
         ]),
       ),
     );

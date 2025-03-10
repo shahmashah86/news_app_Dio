@@ -1,21 +1,21 @@
 import 'dart:developer';
 
 import 'package:dio/dio.dart';
-import 'package:flutter/foundation.dart';
+
 import 'package:news_app_dio/model/article_model.dart';
 import 'package:news_app_dio/package/api_service.dart';
 
-String apiKey = "f581470f7313431cb4646404d0feb37a";
+String apiKey = "8efa17edfdf1485d874f5a399fc1644e";
 
 
 class GetRepository {
-  Future<List<ArticleModel>> getTopeadlines({String? searchitem}) async {
+  Future<List<ArticleModel>> getTopHeadlines({String? searchitem}) async {
     try {
       final Response response = await ApiService.get(
           path: "top-headlines",
-          queryParameters: {'country': 'us', 'apiKey': apiKey,'q':'searchitem'});
+          queryParameters: {'country': 'us', 'apiKey': apiKey,});
       if (response.statusCode == 200) {
-        log("data is present");
+        // log(response.data['articles'].toString(),name:"artile list");
         return (response.data['articles'] as List)
             .map((eachElement) => ArticleModel.fromMap(eachElement))
             .toList();
@@ -43,5 +43,29 @@ class GetRepository {
     } catch (e) {
       throw "Something went wrong in request/code=getcategorywiseTopHeadlines";
     }
+  }
+
+
+  Future<List<ArticleModel>> getSearcResult({String? searchitem,String? category}) async{
+    try{
+      log('categorysearch!');
+    
+      final Response response=await ApiService.get(path:"top-headlines",queryParameters: {'q':searchitem,'category': category,'apikey':apiKey});
+      // log(response.data['articles'].toString(),name: "search Response");
+      if(response.statusCode==200){
+        return (response.data['articles'] as List<dynamic>).map((toElement)=>ArticleModel.fromMap(toElement)).toList();
+        
+      }
+      else{
+               throw "Something went wrong in response=getSearchResilt";
+      }
+    }
+    catch(e){
+      throw "Something went wrong in code";
+    }
+    
+
+
+
   }
 }

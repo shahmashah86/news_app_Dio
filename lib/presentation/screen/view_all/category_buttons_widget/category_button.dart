@@ -3,13 +3,18 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app_dio/presentation/bloc/news_article/news_article_bloc.dart';
 
 class CategoryButton extends StatefulWidget {
-  const CategoryButton({super.key});
+   final TextEditingController? controller;
+   final FocusNode? focusNode;
+  
+  CategoryButton({this.controller,this.focusNode});
+
 
   @override
   State<CategoryButton> createState() => _CategoryButtonState();
 }
 
 class _CategoryButtonState extends State<CategoryButton> {
+  
   List<String> category = [
     "All",
     "Business",
@@ -27,7 +32,7 @@ class _CategoryButtonState extends State<CategoryButton> {
     return BlocBuilder<NewsArticleBloc, NewsArticleState>(
       builder: (context, state) {
         return SingleChildScrollView(
-            // This next line does the trick.
+          
             scrollDirection: Axis.horizontal,
             child: Padding(
               padding: const EdgeInsets.only(left: 10, right: 10),
@@ -38,9 +43,17 @@ class _CategoryButtonState extends State<CategoryButton> {
                     selected: indexOfSelcted == index,
                     selectedColor: const Color.fromARGB(179, 241, 234, 234),
                     onSelected: (selected) {
+                      widget.controller?.clear(); 
+                      widget.focusNode?.unfocus();                    
+                       
+                      
+                      
                       String categoryLabel = category[index];
-
+                   
+                     
                       if (index == 0) {
+                       
+                        
                         context
                             .read<NewsArticleBloc>()
                             .add(NewsArticleGetTopHeadlines());
@@ -48,8 +61,10 @@ class _CategoryButtonState extends State<CategoryButton> {
                         context.read<NewsArticleBloc>().add(
                             NewsArticleCategoryWise(category: categoryLabel));
                       }
-
-                      indexOfSelcted = selected ? index : index;
+                       
+                      indexOfSelcted = selected?index : index;
+                      
+            
                     },
                   );
                 })

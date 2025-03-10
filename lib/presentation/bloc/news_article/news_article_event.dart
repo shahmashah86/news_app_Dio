@@ -14,9 +14,9 @@ class NewsArticleCategoryWise extends NewsArticleEvent{
   NewsArticleCategoryWise( {required this.category});
 }
 
-abstract class  SearchNews extends NewsArticleEvent{
-  final String searchtext;
-    SearchNews({required this.searchtext});
+class  NewsArticleSearchNews extends NewsArticleEvent{
+  final String? searchtext;
+    NewsArticleSearchNews({this.searchtext});
   
 }
 

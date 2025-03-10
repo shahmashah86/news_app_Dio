@@ -71,7 +71,7 @@ class Carouselnews extends StatelessWidget {
                           const SizedBox(height: 5),
                           Text(
                             news.title ?? "Unavialabale",
-                            style: TextStyle(
+                            style: const TextStyle(
                               overflow: TextOverflow.ellipsis,
                               color: Colors.white,
                               fontSize: 16,

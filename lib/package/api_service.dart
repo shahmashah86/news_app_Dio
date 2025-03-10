@@ -6,9 +6,10 @@ class ApiService {
   static Dio dio = Dio()
     ..options = BaseOptions(
         baseUrl: "https://newsapi.org/v2/",
-        connectTimeout: const Duration(seconds: 60),
-        receiveTimeout: const Duration(seconds: 60),
-        sendTimeout: const Duration(seconds: 60));
+        connectTimeout: const Duration(seconds: 600),
+        receiveTimeout: const Duration(seconds: 600),
+        // sendTimeout: const Duration(seconds: 600)
+        );
   static Future<Response> get(
       {required String path, Map<String, dynamic>? queryParameters}) async {
     try {

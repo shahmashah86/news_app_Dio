@@ -83184,7 +83184,7 @@ s.toString
 J.ek(A.py(s,!1,t.Sq),new A.kt())
 this.aO()},
 L(a){var s=null,r=t.p
-return A.atO(s,A.acq(!0,A.f7(A.b([new A.bN(B.Dd,A.eL(s,B.AM,B.x,s,s,new A.cF(B.BL,s,s,A.hZ(10),s,s,B.au),s,67,s,s,s,s,1/0),s),B.hy,new A.I4(new A.c_(0,$.as()),s),B.hy,new A.bN(B.De,A.mQ(A.b([B.Sr,B.N4,A.yY(!1,!0,B.So,s,!0,s,s,s,s,s,s,s,s,s,new A.akW(a),s,s,s,s,s,s,s)],r),B.T,B.Y,B.U,s),s),B.Dm],r),B.T,B.Y,B.U),!0))}}
+return A.atO(s,A.acq(!0,A.f7(A.b([new A.bN(B.Dd,A.eL(s,B.AN,B.x,s,s,new A.cF(B.BL,s,s,A.hZ(10),s,s,B.au),s,67,s,s,s,s,1/0),s),B.hy,new A.I4(new A.c_(0,$.as()),s),B.hy,new A.bN(B.De,A.mQ(A.b([B.Ss,B.N4,A.yY(!1,!0,B.So,s,!0,s,s,s,s,s,s,s,s,s,new A.akW(a),s,s,s,s,s,s,s)],r),B.T,B.Y,B.U,s),s),B.Dm],r),B.T,B.Y,B.U),!0))}}
 A.akW.prototype={
 $0(){var s=A.ats(new A.akV(),null,t.z)
 return A.ms(this.a).od(s)},
@@ -83222,7 +83222,7 @@ if(q==null)q=""
 o=A.eL(p,A.ass(new A.ZD(),B.cY,250,q,p,1/0),B.I,p,p,new A.cF(p,p,p,r,p,new A.mk(B.eX,B.eW,B.bx,o,p,p),B.au),p,p,B.m3,p,p,p,p)
 r=s.d
 q=t.p
-return A.jq(B.bU,A.b([o,A.tw(16,A.f7(A.b([B.AR,B.hz,A.dQ(r==null?"Unavialabale":r,p,p,p,B.Qt,p,p),B.hz,B.Sq],q),B.be,B.Y,B.U),p,p,16,16,p,p)],q),B.I,B.bO)},
+return A.jq(B.bU,A.b([o,A.tw(16,A.f7(A.b([B.AR,B.hz,A.dQ(r==null?"Unavialabale":r,p,p,p,B.Qt,p,p),B.hz,B.Sr],q),B.be,B.Y,B.U),p,p,16,16,p,p)],q),B.I,B.bO)},
 $S:550}
 A.ZD.prototype={
 $3(a,b,c){return A.ati("assets/images/imagenotFound.png",B.cY)},
@@ -83244,7 +83244,7 @@ L(a){var s,r,q,p,o=null,n=this.c,m=n.r
 if(m==null)m=""
 m=A.ass(new A.a9Q(),B.cY,330,m,o,1/0)
 s=t.p
-r=A.mQ(A.b([A.eL(o,B.Sl,B.x,o,o,new A.cF(B.cF,o,o,A.hZ(20),o,o,B.au),o,o,o,B.D4,o,o,o),B.xR,B.Ss],s),B.T,B.Y,B.U,o)
+r=A.mQ(A.b([A.eL(o,B.Sl,B.x,o,o,new A.cF(B.cF,o,o,A.hZ(20),o,o,B.au),o,o,o,B.D4,o,o,o),B.xR,B.St],s),B.T,B.Y,B.U,o)
 q=n.d
 q=A.dQ(q==null?"":q,o,o,o,B.OK,o,o)
 p=n.e
@@ -83280,7 +83280,7 @@ o.e=s},
 $S:18}
 A.uN.prototype={
 L(a){var s=null,r=A.hZ(40),q=t.p,p=this.d,o=this.c
-return A.atO(new A.wD(new A.SC(13,s,1/0,13),13,s),A.f7(A.b([new A.bN(B.m2,A.auf(A.b([A.eL(s,A.atf(s,s,B.DX,s,s,new A.agA(a),s,s,s),B.x,s,s,new A.cF(B.fd,s,s,r,s,s,B.au),s,50,s,s,s,s,50),B.MO,B.Sp,B.Sm],q),B.an,0),s),B.hy,A.aa0(new A.bN(B.Dh,new A.B9(o,p,"Search",B.DV,new A.agB(this,a),B.U2,B.U6,B.U5,s),s),0.4),B.MP,new A.x5(o,p,s),B.MS,A.yc(A.Y7(new A.agC(),t.Sq,t.va),1)],q),B.be,B.Y,B.U))}}
+return A.atO(new A.wD(new A.SC(13,s,1/0,13),13,s),A.f7(A.b([new A.bN(B.m2,A.auf(A.b([A.eL(s,A.atf(s,s,B.DX,s,s,new A.agA(a),s,s,s),B.x,s,s,new A.cF(B.fd,s,s,r,s,s,B.au),s,50,s,s,s,s,50),B.MO,B.Sq,B.Sm],q),B.an,0),s),B.hy,A.aa0(new A.bN(B.Dh,new A.B9(o,p,"Search",B.DV,new A.agB(this,a),B.U2,B.U6,B.U5,s),s),0.4),B.MP,new A.x5(o,p,s),B.MS,A.yc(A.Y7(new A.agC(),t.Sq,t.va),1)],q),B.be,B.Y,B.U))}}
 A.agA.prototype={
 $0(){var s=this.a
 J.ek(A.py(s,!1,t.Sq),new A.kt())
@@ -88031,8 +88031,8 @@ B.Si=new A.dP("search result unavailable",null,B.P3,null,null,null,null,null,nul
 B.AL=new A.f6(B.S,null,null,B.Si,null)
 B.P=new A.hq(4)
 B.RJ=new A.m(!0,null,null,null,null,null,26,B.P,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.St=new A.dP("\ud83c\udf0d World  News in Focus",null,B.RJ,null,null,null,null,null,null)
-B.AM=new A.f6(B.S,null,null,B.St,null)
+B.Sp=new A.dP("\ud83c\udf0d World  News  are in Focus",null,B.RJ,null,null,null,null,null,null)
+B.AN=new A.f6(B.S,null,null,B.Sp,null)
 B.B8=new A.J(1,0.8627450980392157,0.8431372549019608,0.8431372549019608,B.i)
 B.CD=new A.at(14e5)
 B.N6=new A.BD(null)
@@ -88167,8 +88167,8 @@ B.t0=new A.zx(B.I4,1,0.6196078431372549,0.6196078431372549,0.6196078431372549,B.
 B.e2=new A.at(2e6)
 B.N5=new A.BC(null)
 B.MM=new A.dt(50,50,B.N5,null)
-B.AN=new A.f6(B.S,null,null,B.MM,null)
-B.Gl=A.b(s([B.xU,B.AN]),t.p)
+B.AM=new A.f6(B.S,null,null,B.MM,null)
+B.Gl=A.b(s([B.xU,B.AM]),t.p)
 B.BN=new A.rp(B.an,B.Y,B.U,B.T,null,B.bz,null,0,B.Gl,null)
 B.fl=new A.hl(0,"cut")
 B.fm=new A.hl(1,"copy")
@@ -90362,13 +90362,13 @@ B.Sm=new A.dP("News from all over the world",null,B.PX,null,null,null,null,null,
 B.Oe=new A.m(!0,B.cF,null,null,null,null,14,B.P,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.So=new A.dP("View all",null,B.Oe,null,null,null,null,null,null)
 B.Pn=new A.m(!0,null,null,null,null,null,40,B.P,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Sp=new A.dP("Discover",null,B.Pn,null,null,null,null,null,null)
+B.Sq=new A.dP("Discover",null,B.Pn,null,null,null,null,null,null)
 B.R6=new A.m(!0,B.K,null,null,null,null,12,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Sq=new A.dP("CNN Indonesia \u2022 6 hours ago",null,B.R6,null,null,null,null,null,null)
+B.Sr=new A.dP("CNN Indonesia \u2022 6 hours ago",null,B.R6,null,null,null,null,null,null)
 B.O_=new A.m(!0,null,null,null,null,null,25,B.P,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Sr=new A.dP("Recomendation",null,B.O_,null,null,null,null,null,null)
+B.Ss=new A.dP("Recomendation",null,B.O_,null,null,null,null,null,null)
 B.RM=new A.m(!0,B.t0,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.Ss=new A.dP("Trending \u2022 6 hours ago",null,B.RM,null,null,null,null,null,null)
+B.St=new A.dP("Trending \u2022 6 hours ago",null,B.RM,null,null,null,null,null,null)
 B.VP=new A.afU(0,"system")
 B.J6=new A.i(0.056,0.024)
 B.Jk=new A.i(0.108,0.3085)
